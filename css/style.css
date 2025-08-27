@@ -46,9 +46,7 @@ body {
     box-shadow: 0px 2px 20px var(--color-secondary) !important;
 }
 
-.card-sm-clicked {
-    box-shadow: 0px 2px 20px var(--color-primary) !important;
-}
+
 
 .card .card-body {
     position: relative;
@@ -1164,7 +1162,7 @@ main #contact .contact-icon:hover{
         padding-right: 0;
     }
     .card-head-container{
-        width: 80% !important;
+        width: 100% !important;
     }
     main .card,
     main #about-me .card,
