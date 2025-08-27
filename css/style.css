@@ -1,0 +1,1555 @@
+/* Start of Reset and Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --color-primary: #8f0100;
+    --color-secondary: #67a2fe;
+    --color-third: #fe842e;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+.loaded {
+    padding-bottom: 0px !important;
+    transition: all 0.5s ease;
+    height: 100%;
+}
+/* End of Reset and Base Styles */
+
+/* Start of Common Styles */
+
+/* Card Base Styles */
+.card {
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    border: 1px solid #67a1fe41;
+    border-radius: 24px;
+    padding: 0;
+    transition: all 1s ease !important;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card:hover {
+    border-color: var(--color-secondary);
+    box-shadow: 0px 2px 10px var(--color-secondary);
+}
+
+.card-clicked {
+    box-shadow: 0px 2px 20px var(--color-secondary) !important;
+}
+
+.card-sm-clicked {
+    box-shadow: 0px 2px 20px var(--color-primary) !important;
+}
+
+.card .card-body {
+    position: relative;
+}
+
+.card .card-subtitle {
+    color: var(--color-secondary);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.card .card-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.card .card-arrow {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover .card-arrow {
+    background: #67a1fe41;
+    transform: rotate(45deg);
+}
+
+.card .card-arrow i {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* End of Common Styles */
+
+/* Start of navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #67a1fe41;
+    z-index: 1000;
+}
+
+.nav-text {
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    animation: scroll-text 20s linear infinite;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* End of navbar */
+
+
+
+/* Start of Cover */
+
+#cover {
+    width: 90%;
+}
+
+
+header {
+    padding-bottom: 20rem !important;
+}
+
+    /* Profile Card Start */
+
+    .card .card-body .profile-image-container {
+        width: 40%;
+        height: 90%;
+        border-radius: 30px 0px 30px 0px;
+        border: 1px solid #8f000077;
+        box-shadow: 0px 2px 10px var(--color-primary);
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .card .card-body .profile-image-container :hover {
+        box-shadow: 0px 2px 20px var(--color-primary);
+    }
+
+    .card .card-body .profile-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 0px 0px 0px 5px;
+        transform: scale(1.35);
+    }
+
+    header .card .card-body .profile-content .profile-subtitle {
+        color: var(--color-secondary);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    header .card .card-body .profile-content .profile-name {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    header .card .card-body .profile-content .profile-description {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    /* Profile Card End */
+
+    /* Credentials Card Start*/
+
+    header .card .card-body .education-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+    }
+
+    /* Credentials Card End*/
+
+    /* Skills Card Start*/
+
+    header .card .card-body .skills-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Skills Card End*/
+
+
+    /* Projects Card Start */
+
+    .project-preview {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #2a2a2a;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-overlay {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 8px 12px;
+        border-radius: 8px;
+    }
+
+    .project-label {
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    /* Projects Card End */
+
+    /* GitHub Card Start */
+
+    header .card .card-body .experience-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .card .card-body img {
+        width: 100%;
+    }
+
+    /* GitHub Card End */
+
+    /* Services Card Start */
+
+    header .card .card-body .service-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    header .card .card-body .service-icon:hover {
+        background: #67a1fe41;
+        transform: scale(1.1);
+    }
+
+    header .card .card-body .service-icon:hover img {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+    }
+
+    header .card .card-body .service-icon img:hover {
+        transition: all 0.3s ease;
+    }
+
+
+    header .card .card-body .service-sm-card .title {
+        width: 70%;
+        overflow: hidden;
+        padding-top: 10px;
+    }
+
+    header .card .card-body .service-sm-card p {
+        color: white;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    header .card .card-body .service-icon img {
+        width: 50%;
+
+    }
+    
+    /* Services Card End */
+
+    /* Social Card Start */
+
+    .card .social-icons {
+        height: 120px;
+    }
+
+    .card .social-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .card .social-icon:hover {
+        background: #67a1fe41;
+        transform: scale(1.1);
+    }
+
+    .card .social-icon i {
+        color: #ffffff;
+        font-size: 28px;
+    }
+    
+    /* Social Card End */
+
+    /* Statistics Card */
+
+    header .card .card-body .stat-item {
+        text-align: center;
+    }
+
+    header .card .card-body .stat-number {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 1;
+    }
+
+    header .card .card-body .achievements-sm-card {
+        width: 40%;
+        height: auto;
+
+    }
+
+    header .card .card-body .small-card {
+        margin: 0px !important;
+
+    }
+
+    header .card .card-body .stat-label {
+        color: #888;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+    }
+    
+    /* Statistics Card End */
+
+    /* Work Together Card Start*/
+    
+    header .card .card-body .work-together-card {
+        position: relative;
+
+    }
+
+    header .card .card-body .work-together-content {
+        position: relative;
+        z-index: 2;
+
+    }
+
+    header .card .card-body .star-icon {
+        width: 80px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        animation: rotate 10s linear infinite;
+    }
+
+    header .card .card-body .star-icon:hover {
+        background: #67a1fe41;
+        transition: all 0.3s ease;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    header .card .card-body .star-icon i {
+        color: #ffffff;
+        font-size: 32px;
+    }
+
+    header .card .card-body .work-together-title {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 0;
+
+    }
+
+    header .card .card-body .text-primary {
+        color: var(--color-secondary) !important;
+    }
+
+    /* Work Together Card End*/
+
+/* End of Cover */
+
+/* Start of About Me */
+main #about-me {
+    padding-bottom: 20rem;
+}
+
+main #about-me .card {
+    width: 90%;
+}
+
+main .card .card-body {
+    padding: 2rem;
+}
+
+main .card .card-body .card-content .card-subtitle {
+    font-size: 16px;
+
+}
+
+main .card .card-body .card-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+main .card .card-body .card-content h4 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+main .card .card-body .card-content h5 {
+    font-size: 20px !important;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+main .card .card-body .card-content .card-text {
+    font-size: 24px;
+}
+
+.card-text-sm {
+    font-size: 1rem !important;
+}
+
+.card-text-1x {
+    font-size: 1.5rem !important;
+    text-align: justify !important;
+    font-weight: 500;
+}
+
+main #education .card .card-body .card {
+    border: none;
+}
+/* End of About Me */
+
+
+/* Start of Education */
+
+main #education {
+    padding-bottom: 20rem;
+}
+
+main #education .card {
+    width: 90%;
+}
+
+/* End of Education */
+
+/* Start of Skills */
+
+main #skills {
+    padding-bottom: 20rem;
+}
+
+main #skills .card {
+    width: 90%;
+}
+
+main #skills .card .card-sm .card-body {
+    padding: 1rem;
+}
+
+main #skills .card .card-sm:hover {
+    border-color: var(--color-secondary) !important;
+    box-shadow: 0px 2px 10px var(--color-secondary) !important;
+}
+
+main #skills .card .card-sm .card-body .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-sk {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+    z-index: 1;
+    border-radius: 24px;
+    border: none !important;
+}
+
+.card-sk:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color-secondary);
+    opacity: 50%;
+    height: 150px;
+    width: 500px;
+    border-radius: 3rem;
+}
+
+.card-sk:before {
+    top: 100%;
+    left: 100%;
+    transition: all 1s;
+}
+
+.card-sk:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 15px;
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.stripes {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg,
+            rgba(255, 255, 255, .15) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .15) 50%,
+            rgba(255, 255, 255, .15) 75%,
+            transparent 75%,
+            transparent);
+}
+
+.stripes.animated {
+    animation: animate-stripes 3s linear infinite reverse;
+}
+
+.progress-bar-inner {
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-color: #67a2fe;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    position: relative;
+    animation: auto-progress 10s infinite linear;
+}
+
+.progress-bar-inner-90 {
+    width: 90%;
+}
+
+.progress-bar-inner-70 {
+    width: 70%;
+}
+
+.progress-bar-inner-50 {
+    width: 50%;
+}
+
+/* End of Skills */
+
+/* Start of Experiance */
+
+main #experience {
+    padding-bottom: 20rem;
+}
+
+main #experience .card {
+    width: 90%;
+}
+
+.timeline-container {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #8f000077;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 1rem 2.5rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: #0a0a0a;
+    border: 4px solid var(--color-secondary);
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 28px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--color-secondary);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--color-secondary);
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 28px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--color-secondary);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--color-secondary) transparent transparent;
+}
+
+.right::after {
+    left: -12.5px;
+}
+
+.content {
+    padding: 20px 30px;
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #8f000077;
+    transition: all 1s ease !important;
+}
+
+.content:hover {
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 2px 10px var(--color-secondary) !important;
+    transform: scaleY(101%) !important;
+}
+
+.content-alt {
+    background: linear-gradient(60deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+
+}
+
+.animated-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-container::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::before {
+        left: 60px;
+        border: medium solid #495057;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #495057 transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+/* End of Experiance */
+
+/* Start of  Services */
+
+#services {
+    padding-bottom: 20rem;
+}
+
+main #services .card {
+    width: 90%;
+
+}
+
+.accordion-item {
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    border: 1px solid #67a1fe41;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem !important;
+    overflow: hidden;
+}
+
+.accordion-header {
+    border-bottom: none;
+}
+
+.accordion-button {
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    transition: background-color 1s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    color: var(--color-secondary);
+    box-shadow: none;
+}
+
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+
+.accordion-button::after {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    transition: transform 0.3s ease;
+}
+
+.accordion-body {
+    background-color: #67a1fe41;
+    padding: 1.5rem;
+}
+
+.service-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    width: 30px;
+    text-align: center;
+}
+
+/* End of  Services */
+
+/* Start of Projects */
+#projects {
+    padding-bottom: 20rem;
+}
+
+main #projects .card {
+    width: 90%;
+
+}
+
+.project-card iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.text-secondary {
+    color: var(--color-secondary) !important;
+}
+
+/* End of Projects */
+
+/* Start of achivements */
+#achievements {
+    padding-bottom: 20rem;
+}
+
+main #achievements .card {
+    width: 90%;
+
+}
+
+.achievement-card {
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+    border: none !important;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 20px var(--color-secondary);
+}
+
+
+.achievement-card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.achievement-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.achievement-card span {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .achievement-card {
+        margin-bottom: 20px;
+    }
+
+    .achievements-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* End of achivements */
+
+
+/* Start of Testimonials */
+#testimonials {
+    padding-bottom: 20rem;
+}
+
+main #testimonials .card {
+    width: 90%;
+
+}
+
+.testimonial-container {
+    width: 90%;
+    display: flex;
+    border: 1px solid #67a1fe41;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+}
+
+.testimonial-branch {
+    background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+    border: 1px solid #67a1fe41;
+    border-right: none ;
+    color: #fff;
+    padding: 30px 20px;
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-branch::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #67a1fe41;
+    border-radius: 2px;
+}
+
+.testimonial-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.testimonial-list-item {
+    padding: 15px 15px 15px 45px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.testimonial-list-item::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 4px;
+    background-color: #67a1fe41;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-list-item:hover {
+    background-color: #495057;
+}
+
+.testimonial-list-item.active {
+    background-color: var(--color-secondary);
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.testimonial-content {
+    padding: 40px;
+    width: calc(100% - 280px);
+}
+
+.testimonial-card {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.testimonial-card.active {
+    display: block;
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #007bff;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonial-title {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial-branch {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 15px;
+        justify-content: flex-start;
+    }
+
+    .testimonial-branch::before {
+        width: 80%;
+        height: 4px;
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+    }
+
+    .testimonial-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .testimonial-list-item {
+        padding: 10px 20px;
+        margin-bottom: 0;
+        margin-right: 10px;
+        white-space: nowrap;
+    }
+
+    .testimonial-list-item::before {
+        width: 4px;
+        height: 20px;
+        left: 50%;
+        top: -10px;
+        transform: translateX(-50%);
+    }
+
+    .testimonial-content {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+
+/* End of Testimonials */
+
+/* Start of contact */
+#contact {
+    padding-bottom: 20rem;
+}
+
+main #contact .card {
+    width: 90%;
+
+}
+
+main #contact .contact-icon:hover{
+    margin-bottom: 1rem;
+}
+
+/* End of contact */
+
+/* Responsive Design */
+
+/* --- Responsive Design: Mobile (up to 767px) --- */
+@media (max-width: 767px) {
+    html {
+        font-size: 15px;
+    }
+    body {
+        padding: 0 8px;
+    }
+    h3{
+        font-size: 1.5rem !important;
+    }
+    .profile-image-container{
+        width: 100% !important;
+    }
+    .stat-label{
+        font-size: 0.5rem !important;
+    }
+    .card-sk:before {
+    width: 500px;
+    border-radius: 3rem;
+    }
+    .container-fluid,
+    main,
+    main #about-me,
+    main #education,
+    main #skills,
+    main #experience,
+    main #services,
+    main #projects,
+    main #achievements,
+    main #testimonials,
+    main #contact,
+    header .cover-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card-head-container{
+        width: 80% !important;
+    }
+    main .card,
+    main #about-me .card,
+    main #education .card,
+    main #skills .card,
+    main #experience .card,
+    main #services .card,
+    main #projects .card,
+    main #achievements .card,
+    main #testimonials .card,
+    main #contact .card {
+        width: 80% !important;
+        margin: 16px 0 !important;
+        align-self: center;
+        text-align: center;
+    }
+    #about-me .card .card-body{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #about-me .card-text{
+        font-size: 1rem !important;
+    }
+    #education .education-container{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #skills .skills-container{
+        flex-wrap: wrap !important;
+        
+    }
+    #skills .skills-container .card{
+        width: 30% !important;
+        
+    }
+    #skills .skills-container-sk{
+        flex-wrap: wrap !important;
+        
+    }
+    #skills .skills-container-sk .card-sk{
+        width: 50% !important;
+       
+        
+    }
+    #skills .skills-container .card .card-body h5{
+        font-size: 0.8rem !important;
+        
+    }
+    #skills .skills-container-sk .card-sk .card-body h5{
+        width: 100% !important;
+        font-size: 0.8rem !important;
+        
+    }
+    
+    .card-body {
+        padding: 16px !important;
+    }
+    .card {
+        border-radius: 12px;
+    }
+    .profile-name,
+    header .card .card-body .profile-content .profile-name {
+        font-size: 22px !important;
+    }
+    .work-together-title,
+    header .card .card-body .work-together-title {
+        font-size: 22px !important;
+    }
+    .stat-number,
+    header .card .card-body .stat-number {
+        font-size: 22px !important;
+    }
+    .card-arrow {
+        bottom: 12px;
+        right: 12px;
+    }
+    .card .social-icon,
+    header .card .card-body .service-icon,
+    header .card .card-body .star-icon {
+        width: 48px;
+        height: 48px;
+    }
+    .timeline-container::after {
+        left: 16px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    
+    #achievements .achievement-container {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #achievements .achievement-container .achievement-card-container {
+        width: 50% !important;
+    }
+    .achievement-card h3 {
+        font-size: 1.5rem;
+    }
+    .achievement-card span {
+        font-size: 1.2rem;
+    }
+    #contact .card-text-1x{
+        text-align: center !important;
+        font-size: 1rem !important;
+    }
+    #contact .social-icons .social-icon-container{
+        flex-wrap: wrap !important;
+        padding-bottom: 2rem;
+        
+    }
+    #contact .contact-card{
+        padding-bottom: 3rem !important;
+    }
+    #contact .social-icons .social-icon-container .social-icon-item{
+        width: 45% !important;
+    }
+    .navbar {
+        font-size: 1rem;
+    }
+    .navbar .nav-text{
+        text-align: center;
+    }
+    .card .card-title {
+        font-size: 18px;
+    }
+    .card .card-subtitle {
+        font-size: 10px;
+    }
+    .card .card-body .card-content h3 {
+        font-size: 1.5rem;
+    }
+    .card .card-body .card-content h4 {
+        font-size: 1.2rem;
+    }
+    .card .card-body .card-content h5 {
+        font-size: 1rem !important;
+    }
+    .card .card-body .card-content .card-text {
+        font-size: 1rem;
+    }
+    .progress-bar {
+        height: 10px;
+    }
+    .progress-bar-inner {
+        height: 10px;
+    }
+    /* Hide or stack side-by-side elements vertically */
+    .testimonial-container,
+    .testimonial-branch {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .testimonial-list {
+        flex-direction: row !important;
+        overflow-x: auto;
+    }
+    .testimonial-list-item {
+        font-size: 0.9rem;
+    }
+}
+
+/* --- Responsive Design: Tablet (768px to 1023px) --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 16px;
+    }
+    .container-fluid,
+    main .card,
+    main #about-me .card,
+    main #education .card,
+    main #skills .card,
+    main #experience .card,
+    main #services .card,
+    main #projects .card,
+    main #achievements .card,
+    main #testimonials .card,
+    main #contact .card {
+        width: 96% !important;
+    }
+    .card-body {
+        padding: 20px !important;
+    }
+    .profile-name,
+    header .card .card-body .profile-content .profile-name {
+        font-size: 28px !important;
+    }
+    .work-together-title,
+    header .card .card-body .work-together-title {
+        font-size: 28px !important;
+    }
+    .stat-number,
+    header .card .card-body .stat-number {
+        font-size: 28px !important;
+    }
+    .card-arrow {
+        bottom: 18px;
+        right: 18px;
+    }
+    .card .social-icon,
+    header .card .card-body .service-icon,
+    header .card .card-body .star-icon {
+        width: 64px;
+        height: 64px;
+    }
+    .timeline-container::after {
+        left: 24px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+    }
+    .testimonial-content {
+        padding: 24px;
+    }
+    .testimonial-img {
+        width: 80px;
+        height: 80px;
+    }
+    .achievement-card h3 {
+        font-size: 2rem;
+    }
+    .achievement-card span {
+        font-size: 1.5rem;
+    }
+    .project-card iframe {
+        height: 300px;
+    }
+    .navbar {
+        font-size: 1.1rem;
+    }
+    .card .card-title {
+        font-size: 20px;
+    }
+    .card .card-subtitle {
+        font-size: 12px;
+    }
+    .card .card-body .card-content h3 {
+        font-size: 2rem;
+    }
+    .card .card-body .card-content h4 {
+        font-size: 1.5rem;
+    }
+    .card .card-body .card-content h5 {
+        font-size: 1.2rem !important;
+    }
+    .card .card-body .card-content .card-text {
+        font-size: 1.2rem;
+    }
+    .progress-bar {
+        height: 12px;
+    }
+    .progress-bar-inner {
+        height: 12px;
+    }
+}
+
+/* --- Responsive Design: Desktop (1024px and above) --- */
+@media (min-width: 1024px) {
+    html {
+        font-size: 17px;
+    }
+    .container-fluid,
+    main .card,
+    main #about-me .card,
+    main #education .card,
+    main #skills .card,
+    main #experience .card,
+    main #services .card,
+    main #projects .card,
+    main #achievements .card,
+    main #testimonials .card,
+    main #contact .card {
+        width: 90% !important;
+    }
+    .card-body {
+        padding: 2rem !important;
+    }
+    .profile-name,
+    header .card .card-body .profile-content .profile-name {
+        font-size: 36px !important;
+    }
+    .work-together-title,
+    header .card .card-body .work-together-title {
+        font-size: 36px !important;
+    }
+    .stat-number,
+    header .card .card-body .stat-number {
+        font-size: 36px !important;
+    }
+    .card-arrow {
+        bottom: 24px;
+        right: 24px;
+    }
+    .card .social-icon,
+    header .card .card-body .service-icon,
+    header .card .card-body .star-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .timeline-container::after {
+        left: 50%;
+    }
+    .timeline-item {
+        width: 50%;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .testimonial-content {
+        padding: 40px;
+    }
+    .testimonial-img {
+        width: 100px;
+        height: 100px;
+    }
+    .achievement-card h3 {
+        font-size: 2.5rem;
+    }
+    .achievement-card span {
+        font-size: 2rem;
+    }
+    .project-card iframe {
+        height: 400px;
+    }
+    .navbar {
+        font-size: 1.2rem;
+    }
+    .card .card-title {
+        font-size: 24px;
+    }
+    .card .card-subtitle {
+        font-size: 14px;
+    }
+    .card .card-body .card-content h3 {
+        font-size: 2.5rem;
+    }
+    .card .card-body .card-content h4 {
+        font-size: 2rem;
+    }
+    .card .card-body .card-content h5 {
+        font-size: 1.5rem !important;
+    }
+    .card .card-body .card-content .card-text {
+        font-size: 1.5rem;
+    }
+    .progress-bar {
+        height: 15px;
+    }
+    .progress-bar-inner {
+        height: 20px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.scroll-triggered-section {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-triggered-section.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
