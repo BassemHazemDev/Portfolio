@@ -525,6 +525,9 @@ main #skills .card .card-sm .card-body .card-content {
     justify-content: center;
     align-items: center;
 }
+main #skills .card .card-sm .card-body {
+    padding: 1rem !important;
+}
 
 .card-sk {
     position: relative;
