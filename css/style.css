@@ -159,7 +159,7 @@ header {
         transform: scale(1.35);
     }
 
-    header .card .card-body .profile-content .profile-subtitle {
+    .profile-content .profile-subtitle {
         color: var(--color-secondary);
         font-size: 12px;
         font-weight: 500;
@@ -168,7 +168,7 @@ header {
         text-align: center;
     }
 
-    header .card .card-body .profile-content .profile-name {
+    .profile-content .profile-name {
         color: #ffffff;
         font-size: 36px;
         font-weight: 700;
@@ -176,7 +176,7 @@ header {
         margin-bottom: 16px;
     }
 
-    header .card .card-body .profile-content .profile-description {
+    .profile-description {
         color: rgba(255, 255, 255, 0.9);
         font-size: 16px;
         text-align: center;
@@ -426,6 +426,12 @@ header {
     /* Work Together Card End*/
 
 /* End of Cover */
+
+/* Start of Mobile Control Center */
+#control-center {
+    display: none; 
+}
+/* End of Mobile Control Center */
 
 /* Start of About Me */
 main #about-me {
@@ -1052,8 +1058,50 @@ main #contact .contact-icon:hover{
         font-size: 15px;
     }
     body {
-        padding: 0 8px;
+        padding: 0;
     }
+    
+    /* Hide desktop header and show mobile control center */
+    header#cover {
+        display: none !important;
+    }
+
+    #control-center {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: 10rem 0rem;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    #control-center h1{
+        font-size: 38px !important;
+    }
+
+    .control-card {
+        border-radius: 24px !important;
+        width: 40%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .control-card .control-card-body a{
+        margin: 1rem !important;
+    }
+    .control-card .control-card-body .control-icon{
+        text-align: center;
+        color: white;
+        width: 50%;
+        font-size: 2rem;
+    }
+
+
+    .control-card .control-card-body .control-card-title {
+        color: var(--color-secondary);
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    
     h3{
         font-size: 1.5rem !important;
     }
@@ -1072,7 +1120,6 @@ main #contact .contact-icon:hover{
     width: 500px;
     border-radius: 3rem;
     }
-    .container-fluid,
     main,
     main #about-me,
     main #education,
@@ -1082,8 +1129,7 @@ main #contact .contact-icon:hover{
     main #projects,
     main #achievements,
     main #testimonials,
-    main #contact,
-    header .cover-container {
+    main #contact {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -1175,10 +1221,7 @@ main #contact .contact-icon:hover{
     header .card .card-body .stat-number {
         font-size: 22px !important;
     }
-    .card-arrow {
-        bottom: 12px;
-        right: 12px;
-    }
+    
     .card .social-icon,
     header .card .card-body .service-icon,
     header .card .card-body .star-icon {
@@ -1341,7 +1384,6 @@ main #contact .contact-icon:hover{
     .testimonial-list-item {
         font-size: 0.9rem;
     }
-    
 }
 
 /* --- Responsive Design: Tablet (768px to 1023px) --- */

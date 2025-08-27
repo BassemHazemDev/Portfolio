@@ -101,7 +101,7 @@ $(document).ready(function () {
 
     // Initialize typing effect for profile name
     setTimeout(() => {
-        const profileName = $('.profile-name');
+        const profileName = $('header .profile-name');
         const originalText = profileName.text();
         typeWriter(profileName, originalText, 100);
     }, 1000);
