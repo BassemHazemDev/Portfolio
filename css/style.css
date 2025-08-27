@@ -1069,7 +1069,6 @@ main #contact .contact-icon:hover{
     #control-center {
         display: flex;
         flex-wrap: wrap;
-        padding: 1rem;
         margin: 10rem 0rem;
         align-items: center !important;
         justify-content: center !important;
@@ -1081,10 +1080,20 @@ main #contact .contact-icon:hover{
 
     .control-card {
         border-radius: 24px !important;
-        width: 40%;
-        padding: 1rem;
-        margin: 1rem;
+        width: 45%;
+        padding: 0.5rem;
+        margin: 0.5rem;
     }
+    .control-card .control-card-body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    #control-center a.text-decoration-none{
+        padding: 0px !important;
+    }
+
     .control-card .control-card-body a{
         margin: 1rem !important;
     }
