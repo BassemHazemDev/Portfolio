@@ -12,23 +12,31 @@ $(document).ready(function () {
     });
 
     // Parallax effect for cards on scroll
-    
-    $(window).scroll(function () {
-        var scrollTop = $(this).scrollTop();
+    function applyParallax() {
+        var scrollTop = $(window).scrollTop();
 
         $('.card-head').each(function () {
             var $this = $(this);
             var offset = $this.offset().top;
             var speed = 0.5;
             var yPos = -(scrollTop - offset) * speed;
-
             if (scrollTop > offset - $(window).height() && scrollTop < offset + $this.height()) {
                 $this.css('transform', 'translateY(' + yPos + 'px)');
+            } else {
+                $this.css('transform', 'translateY(0px)');
             }
         });
-    });
-    
+    }
 
+    // Apply parallax on scroll
+    $(window).scroll(function () {
+        applyParallax();
+    });
+
+    // Apply parallax on page load
+    $(document).ready(function() {
+        applyParallax();
+    });
 
     // Icon hover effects
     $('.service-icon, .social-icon').hover(
@@ -211,13 +219,8 @@ $(document).ready(function () {
         };
     }
 
-    // Create a debounced version of the scroll handler
     var debouncedScrollHandler = debounce(handleScrollAnimations, 16);
-
-    // Attach the single, debounced event listener
     $(window).on('scroll', debouncedScrollHandler);
-
-    // Trigger the animation check on page load
     handleScrollAnimations();
 
 });
