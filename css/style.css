@@ -1241,9 +1241,20 @@ main #contact .contact-icon:hover{
         left: 16px;
     }
     .timeline-item {
-        width: 100%;
+        width: 100% !important;
         padding-left: 40px;
         padding-right: 10px;
+    }
+
+    #experience .timeline-container .timeline-item .animated-card{
+        width: 100%;
+        padding: 20px 10px !important;
+    }
+    #experience .card-body{
+        padding: 1rem 0rem !important;
+    }
+    #experience .container{
+        padding: 0rem !important;
     }
     
     #achievements .achievement-container {
@@ -1378,7 +1389,7 @@ main #contact .contact-icon:hover{
 
     .testimonial-content {
         width: 100%;
-        padding: 30px;
+        padding: 2rem 0.5rem;
     }
     /* Hide or stack side-by-side elements vertically */
     .testimonial-container,
