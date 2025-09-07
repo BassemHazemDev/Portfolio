@@ -1097,6 +1097,9 @@ main #contact .contact-icon:hover{
     .control-card .control-card-body a{
         margin: 1rem !important;
     }
+    .control-card .control-card-body .card-arrow i{
+        margin: 0.8rem !important;
+    }
     .control-card .control-card-body .control-icon{
         text-align: center;
         color: white;
