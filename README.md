@@ -44,18 +44,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 | Home | Projects | Contact |
 |------|----------|---------|
-| ![Home](images/profile2.jpg) | ![Projects](images/projects.png) | ![Contact](images/inst icon.png) |
-
----
-
-## 📝 How to Use
-
-1. **Clone the repo:**
-	```bash
-	git clone https://github.com/bassemhazemdev/My-Portfolio.git
-	```
-2. **Open `index.html` in your browser.**
-3. **Customize** the content, images, and sections as needed.
+| ![Home](images/HomeScreen.png) | ![Projects](images/ProjectsScreen.png) | ![Contact](images/ContactScreen.png) |
 
 ---
 
