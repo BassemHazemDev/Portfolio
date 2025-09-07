@@ -1,58 +1,68 @@
-/* Start of Reset and Base Styles */
+/* =============================== */
+/* Reset and Base Styles           */
+/* =============================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+:root {
     --color-primary: #8f0100;
     --color-secondary: #67a2fe;
     --color-third: #fe842e;
 }
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #0a0a0a;
-    color: #ffffff;
+    color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
 }
+
 .loaded {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
     transition: all 0.5s ease;
     height: 100%;
 }
-/* End of Reset and Base Styles */
+/* ===== End Reset and Base Styles ===== */
 
-/* Start of Common Styles */
+/* =============================== */
+/* Common Card & Utility Styles     */
+/* =============================== */
 
 /* Card Base Styles */
 .card {
     background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
     border: 1px solid #67a1fe41;
     border-radius: 24px;
-    padding: 0;
     transition: all 1s ease !important;
     position: relative;
     overflow: hidden;
     height: 100%;
 }
 
+.card,
+.card .card-body {
+    padding: 0;
+}
+
 .card:hover {
     border-color: var(--color-secondary);
-    box-shadow: 0px 2px 10px var(--color-secondary);
+    box-shadow: 0 2px 10px var(--color-secondary);
 }
 
 .card-clicked {
-    box-shadow: 0px 2px 20px var(--color-secondary) !important;
+    box-shadow: 0 2px 20px var(--color-secondary) !important;
 }
 
-
-
-.card .card-body {
+.card-body {
     position: relative;
 }
 
-.card .card-subtitle {
+.card-subtitle {
     color: var(--color-secondary);
     font-size: 12px;
     font-weight: 500;
@@ -61,19 +71,19 @@ body {
     margin-bottom: 8px;
 }
 
-.card .card-title {
-    color: white;
+.card-title {
+    color: #fff;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 0;
 }
 
-.card .card-arrow {
+.card-arrow {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -86,14 +96,15 @@ body {
     transform: rotate(45deg);
 }
 
-.card .card-arrow i {
-    color: #ffffff;
+.card-arrow i {
+    color: #fff;
     font-size: 16px;
 }
+/* ===== End Common Card & Utility Styles ===== */
 
-/* End of Common Styles */
-
-/* Start of navbar */
+/* =============================== */
+/* Navbar Styles                   */
+/* =============================== */
 .navbar {
     background: rgba(0, 0, 0, 0.9);
     -webkit-backdrop-filter: blur(10px);
@@ -120,11 +131,13 @@ body {
     }
 }
 
-/* End of navbar */
+/* ===== End Navbar Styles ===== */
 
 
 
-/* Start of Cover */
+/* =============================== */
+/* Cover & Header Section          */
+/* =============================== */
 
 #cover {
     width: 90%;
@@ -135,7 +148,7 @@ header {
     padding-bottom: 20rem !important;
 }
 
-    /* Profile Card Start */
+    /* Profile Card */
 
     .card .card-body .profile-image-container {
         width: 40%;
@@ -183,9 +196,9 @@ header {
         line-height: 1.5;
     }
 
-    /* Profile Card End */
+    /* End Profile Card */
 
-    /* Credentials Card Start*/
+    /* Credentials Card */
 
     header .card .card-body .education-container img {
         width: 100%;
@@ -193,9 +206,9 @@ header {
         border-radius: 24px;
     }
 
-    /* Credentials Card End*/
+    /* End Credentials Card */
 
-    /* Skills Card Start*/
+    /* Skills Card */
 
     header .card .card-body .skills-container img {
         width: 100%;
@@ -203,10 +216,10 @@ header {
         object-fit: cover;
     }
 
-    /* Skills Card End*/
+    /* End Skills Card */
 
 
-    /* Projects Card Start */
+    /* Projects Card */
 
     .project-preview {
         position: relative;
@@ -237,9 +250,9 @@ header {
         letter-spacing: 1px;
     }
 
-    /* Projects Card End */
+    /* End Projects Card */
 
-    /* GitHub Card Start */
+    /* GitHub Card */
 
     header .card .card-body .experience-logo {
         display: flex;
@@ -251,9 +264,9 @@ header {
         width: 100%;
     }
 
-    /* GitHub Card End */
+    /* End GitHub Card */
 
-    /* Services Card Start */
+    /* Services Card */
 
     header .card .card-body .service-icon {
         width: 80px;
@@ -298,9 +311,9 @@ header {
 
     }
     
-    /* Services Card End */
+    /* End Services Card */
 
-    /* Social Card Start */
+    /* Social Card */
 
     .card .social-icons {
         height: 120px;
@@ -327,7 +340,7 @@ header {
         font-size: 28px;
     }
     
-    /* Social Card End */
+    /* End Social Card */
 
     /* Statistics Card */
 
@@ -363,9 +376,9 @@ header {
 
     }
     
-    /* Statistics Card End */
+    /* End Statistics Card */
 
-    /* Work Together Card Start*/
+    /* Work Together Card */
     
     header .card .card-body .work-together-card {
         position: relative;
@@ -423,17 +436,21 @@ header {
         color: var(--color-secondary) !important;
     }
 
-    /* Work Together Card End*/
+    /* End Work Together Card */
 
-/* End of Cover */
+/* ===== End Cover & Header Section ===== */
 
-/* Start of Mobile Control Center */
+/* =============================== */
+/* Mobile Control Center           */
+/* =============================== */
 #control-center {
     display: none; 
 }
-/* End of Mobile Control Center */
+/* ===== End Mobile Control Center ===== */
 
-/* Start of About Me */
+/* =============================== */
+/* About Me Section                */
+/* =============================== */
 main #about-me {
     padding-bottom: 20rem;
 }
@@ -489,10 +506,12 @@ main .card .card-body .card-content .card-text {
 main #education .card .card-body .card {
     border: none;
 }
-/* End of About Me */
+/* ===== End About Me Section ===== */
 
 
-/* Start of Education */
+/* =============================== */
+/* Education Section                */
+/* =============================== */
 
 main #education {
     padding-bottom: 20rem;
@@ -502,9 +521,11 @@ main #education .card {
     width: 90%;
 }
 
-/* End of Education */
+/* ===== End Education Section ===== */
 
-/* Start of Skills */
+/* =============================== */
+/* Skills Section                   */
+/* =============================== */
 
 main #skills {
     padding-bottom: 20rem;
@@ -625,9 +646,11 @@ main #skills .card .card-sm .card-body {
     width: 50%;
 }
 
-/* End of Skills */
+/* ===== End Skills Section ===== */
 
-/* Start of Experiance */
+/* =============================== */
+/* Experience Section               */
+/* =============================== */
 
 main #experience {
     padding-bottom: 20rem;
@@ -744,9 +767,11 @@ main #experience .card {
 
 
 
-/* End of Experiance */
+/* ===== End Experience Section ===== */
 
-/* Start of  Services */
+/* =============================== */
+/* Services Section                 */
+/* =============================== */
 
 #services {
     padding-bottom: 20rem;
@@ -808,9 +833,11 @@ main #services .card {
     text-align: center;
 }
 
-/* End of  Services */
+/* ===== End Services Section ===== */
 
-/* Start of Projects */
+/* =============================== */
+/* Projects Section                 */
+/* =============================== */
 #projects {
     padding-bottom: 20rem;
 }
@@ -831,9 +858,11 @@ main #projects .card {
     color: var(--color-secondary) !important;
 }
 
-/* End of Projects */
+/* ===== End Projects Section ===== */
 
-/* Start of achivements */
+/* =============================== */
+/* Achievements Section             */
+/* =============================== */
 #achievements {
     padding-bottom: 20rem;
 }
@@ -891,10 +920,12 @@ main #achievements .card {
     }
 }
 
-/* End of achivements */
+/* ===== End Achievements Section ===== */
 
 
-/* Start of Testimonials */
+/* =============================== */
+/* Testimonials Section             */
+/* =============================== */
 #testimonials {
     padding-bottom: 20rem;
 }
@@ -1032,9 +1063,11 @@ main #testimonials .card {
 }
 
 
-/* End of Testimonials */
+/* ===== End Testimonials Section ===== */
 
-/* Start of contact */
+/* =============================== */
+/* Contact Section                  */
+/* =============================== */
 #contact {
     padding-bottom: 20rem;
 }
@@ -1048,9 +1081,11 @@ main #contact .contact-icon:hover{
     margin-bottom: 1rem;
 }
 
-/* End of contact */
+/* ===== End Contact Section ===== */
 
-/* Responsive Design */
+/* =============================== */
+/* Responsive Design                */
+/* =============================== */
 
 /* --- Responsive Design: Mobile (up to 767px) --- */
 @media (max-width: 767px) {
