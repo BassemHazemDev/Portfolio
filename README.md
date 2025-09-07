@@ -2,7 +2,6 @@
 <!-- Modern and Professional README for Portfolio -->
 # Bassem Hazem – Web Developer Portfolio
 
-![Portfolio Banner](images/MyDevLogo.png)
 
 Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a MERN stack web developer. Built with modern web technologies and a focus on clean, responsive design.
 
@@ -16,27 +15,27 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## 🧑‍💻 About Me
 
-- **Name:** Bassem Hazem Mahmoud
-- **Role:** MERN Stack Web Developer & Freelancer
+- **Name:** Bassem Hazem Mahmoud.
+- **Role:** MERN Stack Web Developer & Freelancer.
 - **Passion:** Building robust, high-quality web applications and empowering other developers.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3 (Bootstrap, custom), JavaScript (jQuery)
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Other:** Font Awesome, Google Fonts
+- **Frontend:** HTML5, CSS3 (Bootstrap, custom), JavaScript (jQuery).
+- **Backend:** Node.js, Express.js.
+- **Database:** MongoDB.
+- **Other:** Font Awesome, Google Fonts.
 
 ---
 
 ## 📂 Features
 
-- Responsive, modern UI/UX
-- Animated cards and smooth scrolling
-- Parallax and interactive effects
-- Sectioned for About, Education, Skills, Experience, Services, Projects, Achievements, Testimonials, and Contact
+- Responsive, modern UI/UX.
+- Animated cards and smooth scrolling.
+- Parallax and interactive effects.
+- Sectioned for About, Education, Skills, Experience, Services, Projects, Achievements, Testimonials, and Contact.
 
 ---
 
@@ -70,9 +69,9 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## 🤝 Connect with Me
 
-- [GitHub](https://github.com/bassemhazemdev)
-- [LinkedIn](https://www.linkedin.com/in/bassem-hazem/)
-- [Email](mailto:bassemhazemdev@gmail.com)
+- [GitHub](https://github.com/bassemhazemdev).
+- [LinkedIn](https://www.linkedin.com/in/bassem-hazem/).
+- [Email](mailto:bassemhazemdev@gmail.com).
 
 ---
 
