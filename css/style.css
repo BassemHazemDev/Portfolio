@@ -436,6 +436,12 @@ header {
         color: var(--color-secondary) !important;
     }
 
+    header .work-together-card .work-icon{
+       bottom: 0;
+       right: 0;
+       margin: 1rem;
+    }
+
     /* End Work Together Card */
 
 /* ===== End Cover & Header Section ===== */
