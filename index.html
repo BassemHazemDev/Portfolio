@@ -918,10 +918,21 @@
                     <div class="card-content w-100 d-flex flex-column justify-content-center align-items-center px-4">
                         <h2 class="card-subtitle mb-2">Projects</h2>
                         <h3 class="card-title mb-5">Some of my projects</h3>
+                        <!-- Project Filter Buttons -->
+                        <div class="mb-4 d-flex justify-content-center align-items-center w-100 project-filter-container">
+                            <div class="btn-group project-filter-group" role="group" aria-label="Project Filters">
+                                <button type="button" class="btn btn-outline-primary project-filter-btn card-sk fr-btn active" data-filter="all">All</button>
+                                <button type="button" class="btn btn-outline-primary project-filter-btn card-sk" data-filter="htmlcss">HTML/CSS Native</button>
+                                <button type="button" class="btn btn-outline-primary project-filter-btn card-sk" data-filter="framework">CSS Framework</button>
+                                <button type="button" class="btn btn-outline-primary project-filter-btn card-sk" data-filter="client">Client Side App</button>
+                                <button type="button" class="btn btn-outline-primary project-filter-btn card-sk" data-filter="backend">Backend APIs</button>
+                                <button type="button" class="btn btn-outline-primary project-filter-btn card-sk" data-filter="fullstack">Full Stack App</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card project-card mb-5">
-                    <div class="row g-5 align-items-center m-3">
+                    <div class="row g-5 align-items-center m-3" data-category="framework">
                         <div class="col-lg-6 project-container">
                             <div class="mb-4">
                                 <h3 class="card-text text-white">PageBolt EN-AR website</h3>
@@ -948,7 +959,7 @@
                     </div>
                 </div>
                 <div class="card project-card mb-5">
-                    <div class="row g-5 align-items-center m-3">
+                    <div class="row g-5 align-items-center m-3" data-category="htmlcss">
                         <div class="col-lg-6 project-container">
                             <div class="mb-4">
                                 <h3 class="card-text text-white">MONAC website</h3>
@@ -975,7 +986,7 @@
                     </div>
                 </div>
                 <div class="card project-card mb-5">
-                    <div class="row g-5 align-items-center m-3">
+                    <div class="row g-5 align-items-center m-3" data-category="fullstack">
                         <div class="col-lg-6 project-container">
                             <div class="mb-4">
                                 <h3 class="card-text text-white">Nota "Note taking application"</h3>
@@ -1004,7 +1015,7 @@
                     </div>
                 </div>
                 <div class="card project-card mb-5">
-                    <div class="row g-5 align-items-center m-3">
+                    <div class="row g-5 align-items-center m-3" data-category="backend">
                         <div class="col-lg-6 project-container">
                             <div class="mb-4">
                                 <h3 class="card-text text-white">Product Management System (CRUD)</h3>
@@ -1033,7 +1044,7 @@
                     </div>
                 </div>
                 <div class="card project-card mb-5">
-                    <div class="row g-5 align-items-center m-3">
+                    <div class="row g-5 align-items-center m-3" data-category="client">
                         <div class="col-lg-6 project-container">
                             <div class="mb-4">
                                 <h3 class="card-text text-white">Trending Movies Site</h3>

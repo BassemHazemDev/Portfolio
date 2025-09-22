@@ -872,6 +872,49 @@ main #projects .card {
     color: var(--color-secondary) !important;
 }
 
+   .project-filter-group {
+        gap: 1.5rem;
+    }
+    .project-filter-btn {
+        background: linear-gradient(315deg, #000000 0%, #1a1a1a 98%, #38383877 100%);
+        border: 1px solid #67a1fe41;
+        border-radius: 24px !important;
+        color: #fff !important;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 1rem 1rem;
+        margin: 0 0.5rem;
+        box-shadow: 0 2px 10px #00000033;
+        transition: all 0.3s, box-shadow 0.5s;
+        position: relative;
+        overflow: hidden;
+    }
+    .project-filter-btn.active,
+    .project-filter-btn:hover {
+        border-color: var(--color-secondary) !important;
+        box-shadow: 0 2px 20px var(--color-secondary);
+        color: var(--color-secondary) !important;
+        background: #1a1a1a !important;
+        transform: scale(1.05);
+    }
+    .fr-btn{
+        padding: 1rem 2rem;
+        width: 10%;
+    }
+
+    /* Animation for project cards */
+    .project-card-animate {
+        opacity: 0;
+        transform: scale(0.95) translateY(30px);
+        transition: opacity 1s, transform 1s;
+        pointer-events: none;
+    }
+    .project-card-animate.show {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        pointer-events: auto;
+    }
+
 /* ===== End Projects Section ===== */
 
 /* =============================== */
@@ -1462,10 +1505,13 @@ main #contact .contact-icon:hover{
     .testimonial-list-item {
         font-size: 0.9rem;
     }
+    .project-filter-group{
+        flex-wrap: wrap;
+    }
 }
 
 /* --- Responsive Design: Tablet (768px to 1023px) --- */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     html {
         font-size: 16px;
     }
@@ -1511,13 +1557,30 @@ main #contact .contact-icon:hover{
         margin: 1rem 0rem;
         width: 45% !important;
     }
-    .timeline-container::after {
-        left: 24px;
+     .timeline-container::after {
+        left: 31px;
     }
+
     .timeline-item {
         width: 100%;
-        padding-left: 60px;
-        padding-right: 20px;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::before {
+        left: 60px;
+        border: medium solid #495057;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #495057 transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    .right {
+        left: 0%;
     }
     .testimonial-content {
         padding: 24px;
@@ -1560,10 +1623,17 @@ main #contact .contact-icon:hover{
     .progress-bar-inner {
         height: 12px;
     }
+    .fr-btn{
+        padding: 1rem 1.5rem;
+        width: 15%;
+    }
+    .project-filter-group{
+        flex-wrap: wrap;
+    }
 }
 
 /* --- Responsive Design: Desktop (1024px and above) --- */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     html {
         font-size: 17px;
     }

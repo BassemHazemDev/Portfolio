@@ -1,4 +1,44 @@
 $(document).ready(function () {
+    // Project Filter Logic with Animation
+    // Project Filter Logic with Animation (fixed)
+    $('.project-filter-btn').on('click', function () {
+        var filter = $(this).data('filter');
+        $('.project-filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.card.project-card').each(function () {
+            var $card = $(this);
+            var $row = $card.find('.row.g-5');
+            var category = $row.data('category');
+            if (filter === 'all' || category === filter) {
+                if ($card.css('display') === 'none') {
+                    $card.css('opacity', 0).css('display', 'block');
+                    setTimeout(function () {
+                        $card.addClass('show project-card-animate');
+                        $card.animate({ opacity: 1 }, 400);
+                    }, 10);
+                } else {
+                    $card.addClass('show project-card-animate');
+                    $card.animate({ opacity: 1 }, 400);
+                }
+            } else {
+                $card.animate({ opacity: 0 }, 400, function () {
+                    $card.removeClass('show project-card-animate');
+                    $card.css('display', 'none');
+                });
+            }
+        });
+    });
+
+    // Initial animation state for project cards
+    $('.card.project-card').each(function () {
+        $(this).css({ display: 'block', opacity: 1 }).addClass('show project-card-animate');
+    });
+
+    // Ensure all cards are visible and fully opaque before first filter click
+    setTimeout(function () {
+        $('.card.project-card').css({ opacity: 1, display: 'block' }).addClass('show project-card-animate');
+    }, 50);
 
     // Smooth scrolling for anchor links
     $('a[href^="#"]').on('click', function (event) {
