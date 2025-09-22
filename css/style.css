@@ -852,8 +852,6 @@ main #projects .card {
   color: var(--color-secondary) !important;
 }
 
-
-
 .project-filter-group {
   gap: 1.5rem;
 }
@@ -1476,16 +1474,18 @@ main #contact .contact-icon:hover {
   .testimonial-list-item {
     font-size: 0.9rem;
   }
+
   .project-filter-btn {
-    width: auto !important;
+    width: 45% !important;
   }
   .fr-btn {
-  padding: 0.5rem 2rem;
-  width: auto !important;
-    }
+    padding: 1rem 2rem;
+    width: 45% !important;
+  }
   .project-filter-group {
     flex-wrap: wrap;
-    gap: 0.5rem;
+    width: 100% !important;
+    gap: 1rem !important;
   }
 }
 
@@ -1604,7 +1604,7 @@ main #contact .contact-icon:hover {
   }
   .fr-btn {
     padding: 1rem 1.5rem;
-    width: 15%;
+    width: auto;
   }
   .project-filter-group {
     flex-wrap: wrap;
